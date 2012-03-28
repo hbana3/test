@@ -1,0 +1,53 @@
+{
+  "modules" : [
+    {
+      "name" : "sap.ui.table.DataTable",
+      "description" : "Provides control sap.ui.table.DataTable.",
+      "size" : 71634,
+      "required" : ["sap.ui.table.library", "sap.ui.core.Control", "sap.ui.core.Popup", "sap.ui.commons.Label"],
+      "includes" : []
+    },
+    {
+      "name" : "sap.ui.table.DataTableRenderer",
+      "description" : "Provides default renderer for control sap.ui.table.DataTable",
+      "size" : 11578,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap.ui.table.Table",
+      "description" : "Provides control sap.ui.table.Table.",
+      "size" : 70419,
+      "required" : ["sap.ui.table.library", "sap.ui.core.Control", "sap.ui.model.SelectionModel", "sap.ui.core.theming.Parameters"],
+      "includes" : []
+    },
+    {
+      "name" : "sap.ui.table.Row",
+      "description" : "Provides control sap.ui.table.Row.",
+      "size" : 5707,
+      "required" : ["sap.ui.table.library", "sap.ui.core.Element"],
+      "includes" : []
+    },
+    {
+      "name" : "sap.ui.table.library",
+      "description" : "Initialization Code and shared classes of library sap.ui.table (1.2.0)",
+      "size" : 2788,
+      "required" : ["sap.ui.core.Core", "sap.ui.core.library", "sap.ui.commons.library"],
+      "includes" : ["sap.ui.table.SelectionMode"]
+    },
+    {
+      "name" : "sap.ui.table.Column",
+      "description" : "Provides control sap.ui.table.Column.",
+      "size" : 19437,
+      "required" : ["sap.ui.table.library", "sap.ui.core.Element", "sap.ui.commons.Label", "sap.ui.commons.TextField", "sap.ui.commons.MenuItem"],
+      "includes" : []
+    },
+    {
+      "name" : "sap.ui.table.TableRenderer",
+      "description" : "Provides default renderer for control sap.ui.table.Table",
+      "size" : 11624,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

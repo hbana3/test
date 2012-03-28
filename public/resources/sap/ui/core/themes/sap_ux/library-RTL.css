@@ -1,0 +1,190 @@
+
+/*!
+ * SAP UI HTML5 Rendering Library ('Phoenix')
+ *
+ * (c) Copyright 2009-2011 SAP AG. All rights reserved
+ */
+
+/*** global CSS - 'base' theme ***/
+/* Global CSS for 'base' theme */
+
+
+
+.sapUiBody {
+	background-color: #EAF1F6;
+	color: #000000;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+
+.sapUiArea {
+	background-color: #EAF1F6;
+	color: #000000;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+
+/* 
+ * used for static (Core) and hidden (HTML) area 
+ * (TODO: think about renaming static area also to hidden since static is not
+ *        required for newer browsers anymore => position: static) 
+ */
+.sapUiHidden {
+	position: absolute;
+	visibility: hidden;
+	top: -10000px;
+	background-color: #EAF1F6; /* repeat the body style in case the application adapts it */
+	color: #000000;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+
+.sapUiCorePlaintext {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+}
+
+.sapUiCoreDefaultFont {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+
+.sapUiCoreDefaultCursor {
+	cursor: default;
+}
+
+.sapUiBLy {
+	background-color: #CCCCCC;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	position: fixed;
+	outline: 0 none;
+}
+.sapUiBliLy {
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	opacity: 0.01;
+	filter: alpha(opacity = 1);
+}
+/*** global CSS - 'sap_ux' theme ***/
+/* Global CSS for 'sap_ux' theme */
+
+
+  
+.sapUiBLy {	
+  /* UX spec */
+  background-color: black;
+  opacity: 0.25;
+  filter: alpha(opacity=25);
+}
+/*** BlindLayer CSS - 'base' theme ***/
+.sapUiBliLy {
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	opacity: 0.01;
+	filter: alpha(opacity = 1);
+}
+/*** BrowserScrollbar CSS - 'sap_ux' theme ***/
+.sapUiBody {
+	scrollbar-face-color: #C5DBEC;
+	scrollbar-highlight-color: #899CAC;
+	scrollbar-3dlight-color: #F3F6F9;
+	scrollbar-darkshadow-color: #F3F6F9;
+	scrollbar-shadow-color: #899CAC;
+	scrollbar-arrow-color: #394452;
+	scrollbar-track-color: #F3F6F9;
+}
+/*** BusyIndicator CSS - 'base' theme ***/
+.sapUiBusy {
+  background-image: url(img-RTL/Busy.gif);
+  display: block;
+  width: 48px;
+  height: 48px;
+  outline: none;
+  cursor: wait;
+}
+
+.sapUiBlyBusy {
+	cursor: wait;
+}
+/*** BusyIndicator CSS - 'sap_ux' theme ***/
+.sapUiBlyBusy {
+	background-color: #EAF1F6;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+/*** ScrollBar CSS - 'base' theme ***/
+
+/* ============================================= */
+/* CSS for control sap.ui.core/ScrollBar.control */
+/* ============================================= */
+
+.sapuicore-ScrollBar{
+  color: #000000;
+  border: 1px solid blue;
+}
+/*** Shadow CSS - 'base' theme ***/
+.sapUiShd {
+	box-shadow:0px 5px 12px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow:0px 5px 12px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0px 5px 12px rgba(0, 0, 0, 0.5);
+}
+/*** TechnicalInfo CSS - 'base' theme ***/
+.sapUiTInf {
+  border: 1px solid #93B2D0;
+	background: #EAF1F6;
+  padding: 6px;
+}
+
+.sapUiTInfCfg {
+	font-size:0.9em;
+}
+
+.sapUiTInfMList {
+	font-size:0.9em;
+	color:#8B8F96;
+	overflow-y:auto;
+	max-height:12em;
+}
+
+.sapUiTInfMEmbd {
+	color:#aaaaaa;
+} 
+
+.sapUiTInfMFail {
+	text-decoration:line-through;
+}
+
+.sapUiTInfMMore {
+	text-decoration:underline;
+	cursor:pointer;
+}
+/*** TechnicalInfo CSS - 'sap_ux' theme ***/
+.sapUiTInf {
+  border-radius:10px;
+	background:-webkit-gradient(linear, 0% 0%, 100% 100%, from(#E5EDF4), to(#BBD2E4));
+	background:-moz-linear-gradient(top, #E5EDF4, #BBD2E4);
+}
+
+html[data-sap-ui-browser=ie8] .sapUiTInf.sapUiShd {
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr=#E5EDF4,EndColorStr=#BBD2E4) progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#808080')" !important;
+}
+/*** View CSS - 'base' theme ***/
+
+/* ========================================= */
+/* CSS for control sap.ui.core/View.control  */
+/* ========================================= */
+.sapUiView {
+	display: inline-block;
+}
